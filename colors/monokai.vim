@@ -15,6 +15,7 @@ set t_Co=256
 
 let g:colors_name = "monokai"
 
+
 " Vim GUI
 hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
@@ -23,8 +24,8 @@ hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
 
 " Background and menu colors
-hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#E6E1DC guibg=#2B2B2B
-hi NonText ctermfg=59 ctermbg=236 cterm=NONE guifg=#49483e guibg=#2B2B2B gui=NONE
+hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#E8E8E8 guibg=#272822
+hi NonText ctermfg=59 ctermbg=236 cterm=NONE guifg=#49483e guibg=#272822 gui=NONE
 hi LineNr ctermfg=102 ctermbg=237 cterm=NONE guifg=#90908a guibg=NONE gui=NONE
 hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
 hi StatusLineNC ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
@@ -49,7 +50,7 @@ hi Directory ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NO
 " Syntax highlighting
 hi Boolean ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
 hi Character ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
-hi Comment ctermfg=95 ctermbg=NONE cterm=NONE guifg=#c9c9c9 guibg=NONE gui=NONE
+hi Comment ctermfg=95 ctermbg=NONE cterm=NONE guifg=#75715E guibg=NONE gui=NONE
 hi Conditional ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Define ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
@@ -58,26 +59,29 @@ hi WarningMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui
 hi Float ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
 hi Function ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NONE
 hi Identifier ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
-hi Keyword ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi Keyword ctermfg=197 ctermbg=NONE cterm=NONE guifg=#F92672 guibg=NONE gui=NONE
 hi Label ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
-hi Number ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi Number ctermfg=141 ctermbg=NONE cterm=NONE guifg=#AE81FF guibg=NONE gui=NONE
 hi Operator ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi PreProc ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=NONE gui=NONE
-hi Statement ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
-hi StorageClass ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
-hi String ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
+hi Statement ctermfg=197 ctermbg=NONE cterm=NONE guifg=#5DE0F7 guibg=NONE gui=NONE
+hi StorageClass ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66D9EF guibg=NONE gui=italic
+hi String ctermfg=186 ctermbg=NONE cterm=NONE guifg=#E6DB74 guibg=NONE gui=NONE
 hi Tag ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
-hi Todo ctermfg=95 ctermbg=NONE cterm=inverse,bold guifg=#75715e guibg=#CCCCCC gui=bold
+hi Todo ctermfg=95 ctermbg=NONE cterm=bold guifg=#75715e guibg=NONE gui=bold
 hi Type ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+
 
 "
 " Python highlighting
 "
-hi pythonBuiltin guifg=#5de0f7 gui=none ctermfg=113 cterm=none
+hi pythonBuiltin guifg=#AE81FF gui=none ctermfg=113 cterm=none
 hi pythonStatement guifg=#5de0f7 gui=none ctermfg=113 cterm=none
 hi pythonOperator guifg=#f92672 gui=none ctermfg=113 cterm=none
+hi pythonFunction guifg=#A6E22E gui=none ctermfg=113 cterm=none
+
 
 "
 " Ruby highlighting
